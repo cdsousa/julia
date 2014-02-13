@@ -9,7 +9,7 @@ n = 5
 
 srand(123)
 
-d = 1 + rand(n)
+d = 1 .+ rand(n)
 dl = -rand(n-1)
 du = -rand(n-1)
 v = randn(n)

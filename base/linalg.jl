@@ -33,6 +33,7 @@ export
     Symmetric,
     Triangular,
     Diagonal,
+    IdentityMatrix,
 
 # Functions
     axpy!,
@@ -146,7 +147,10 @@ export
     At_mul_Bt,
     At_mul_Bt!,
     At_rdiv_B,
-    At_rdiv_Bt
+    At_rdiv_Bt,
+
+# Constants
+    I
 
 typealias BlasFloat Union(Float64,Float32,Complex128,Complex64)
 typealias BlasReal Union(Float64,Float32)
@@ -198,6 +202,7 @@ include("linalg/factorization.jl")
 include("linalg/bunchkaufman.jl")
 include("linalg/triangular.jl")
 include("linalg/symmetric.jl")
+include("linalg/identity.jl")
 include("linalg/woodbury.jl")
 include("linalg/tridiag.jl")
 include("linalg/diagonal.jl")
